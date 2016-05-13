@@ -44,7 +44,7 @@ balneario.controller('compromissoController', function($scope) {
 
 balneario.controller('compartilheController', function($scope,$http){
     $scope.pageClass = 'page-compartilhe';
-
+    
     $scope.submitUrl = function(data) {
         var data = { 
           'nome': $scope.nome, 
@@ -60,8 +60,11 @@ balneario.controller('compartilheController', function($scope,$http){
             headers: { 'Content-Type' : 'application/x-www-form-urlencoded'},
             data:jQuery.param(data)
         });
-        
-        alert('Obrigado');
+      $scope.myForm.$setPristine();
 
-    };
+
+        console.log('ok');
+       
+    };        
+
 });

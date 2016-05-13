@@ -20,11 +20,11 @@
 				participacão, preencha 
 				os campos abaixo e mande 
 				sua ideia, vamos juntos fazer
-				a Balneário de queremos.</p>	<p style="font-size:10px; color: red">Preenchimento nescessário *</p>
+				a Balneário de queremos.</p>	<p style="font-size:10px; color: red" data-ng-show="myForm.email.$invalid && myForm.email.$dirty">Preenchimento nescessário *</p>
 			</div>
 		</div>
 	
-		<div class="row">
+		<div class="row" data-ng-controller="compartilheController">
 			<div class="lead Form--conteudo">
 				<form name="myForm" data-ng-submit="submitUrl()">
 					<div class="form-group">

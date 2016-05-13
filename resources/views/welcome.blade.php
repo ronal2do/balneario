@@ -33,35 +33,7 @@
  <link href="assets/css/vendor/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/vendor/flat-ui.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<style>
-/* ANIMATIONS
-============================================================================= */
 
-/* leaving animations ----------------------------------------- */
-
-/* slide in from the bottom */
-@keyframes slideOutLeft {
-    to      { transform: translateX(-100%); }
-}
-
-/* slide in from the right */
-@keyframes slideInRight {
-    from    { transform:translateX(100%); }
-    to      { transform: translateX(0); }
-}
-
-/* slide in from the bottom */
-@keyframes slideInUp {
-    from    { transform:translateY(100%); }
-    to      { transform: translateY(0); }
-}
-  .ng-enter{ animation: slideInRight 0.5s linear; z-index: 8888; }
-  .ng-leave{ animation: slideOutLeft 0.3s linear; z-index: 9999;}
- [disabled]{
-        background-color: rgba(75, 194, 196, 0.44);
- }
-
-</style>
 <title>Balnário de novas idéias</title>
 
 </head>
