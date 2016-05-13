@@ -1,0 +1,110 @@
+.box
+	height: 125px
+	color: #fff
+	text-transform: uppercase
+	margin: 20px 0px
+	padding: 0px 13px
+.row
+	margin-right: 0
+	margin-left: 0
+.Box__
+	margin: 20px
+	&azul
+		@extend .box
+		+setBgColorAndHover($azul)
+		background-image: url('../img/r.png')
+		background-size: 55px 
+		background-repeat: no-repeat
+		background-position: 64% 55%
+		&--conteudo
+			padding-top: 0px
+			margin: 0 10px
+	&marine
+		@extend .box
+		+setBgColorAndHover($marine)
+		background-image: url('../img/r3.png')
+		background-size: 90px 
+		background-repeat: no-repeat
+		background-position: 62% 48%
+
+	&laranja
+		@extend .box
+		+setBgColorAndHover($laranja)
+		background-image: url('../img/r2.png')
+		background-size: 82px 
+		background-repeat: no-repeat
+		background-position: 69% 34%
+	&titulo
+		&-link
+			display: flex
+			white-space: nowrap
+			color: #fff
+			font-size: 0.75em
+			margin: 50px
+			margin-left: -34px
+
+	&titulo-var
+		margin-top: 15px
+		&-link
+			display: flex
+	&container
+.Eixo
+	margin: 0
+	&__texto
+		color: #fff
+	&__azul
+		margin: 0 0
+		padding: 25px 13px
+		background-color: $azul
+	&__marine
+		margin: 0 0
+		padding: 25px 13px
+		background-color: $marine
+
+@media (min-width: 480px)
+	.box
+		margin: 21px 3px
+		padding: 15px
+	.Box__
+		margin: 0
+		&container
+			padding-top: 15px
+		&azul
+			&--conteudo
+				padding-top: 30px
+		&titulo
+			&-link
+				font-size: 1em
+				margin: 34px
+				margin-left: 0
+			&-var
+				margin-top: 0
+@media (min-width: 768px)
+	.box
+		height: 200px
+		margin: 0
+		padding: 20px
+	.Box__
+		margin: 0
+		&container
+			padding-top: 30px
+		&azul
+			&--conteudo
+				padding-top: 30px
+@media (min-width: 992px)
+	.box
+		height: 225px
+		margin: 0
+		padding: 25px
+	.Box__
+		margin: 10px
+		&container
+			padding-top: 40px
+		&azul
+			&--conteudo
+				padding-top: 30
+@media (min-width: 1200px)
+	.box
+		height: 255px
+		margin: 0
+		padding: 25px
