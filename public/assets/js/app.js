@@ -42,7 +42,26 @@ balneario.controller('compromissoController', function($scope) {
     $scope.pageClass = 'page-compromisso';
 });
 
-// contact page controller
-balneario.controller('compartilheController', function($scope) {
+balneario.controller('compartilheController', function($scope,$http){
     $scope.pageClass = 'page-compartilhe';
+
+    $scope.submitUrl = function(data) {
+        var data = { 
+          'nome': $scope.nome, 
+          'email': $scope.email, 
+          'ideia': $scope.ideia 
+        }; 
+
+        console.log(data);
+
+        $http({
+            method: 'POST',
+            url: '/api/ideia/',
+            headers: { 'Content-Type' : 'application/x-www-form-urlencoded'},
+            data:jQuery.param(data)
+        });
+        
+        alert('Obrigado');
+
+    };
 });

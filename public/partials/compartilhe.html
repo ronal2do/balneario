@@ -26,7 +26,7 @@
 	
 		<div class="row">
 			<div class="lead Form--conteudo">
-				<form name="myForm">
+				<form name="myForm" data-ng-submit="submitUrl()">
 					<div class="form-group">
 		            	<input  type="text" 
 	            				name="nome" 
@@ -47,10 +47,12 @@
 		            	<textarea  	type="text" 
 		            				value="" 
 					            	placeholder="Ideia:" 
-					            	class="form-control" rows="5">
-				        </textarea> 
+					            	data-ng-model="ideia" 
+					            	class="form-control" rows="5"></textarea> 
 		          	</div>
-					<input class="btn btn-block Button" type="submit" value="Enviar" 
+					<input class="btn btn-block Button" 
+						type="submit" 
+						value="Enviar" 
 						data-ng-disabled="myForm.nome.$invalid || myForm.email.$invalid">
 				</form>
 			</div>

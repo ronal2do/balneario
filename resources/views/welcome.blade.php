@@ -80,6 +80,7 @@
 <div class="container Box__container" data-ng-view></div>
     
 <!-- Scripts -->
+<script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
 <script src="./assets/js/vendor/angular.min.js"></script>
 <script src="./assets/js/vendor/angular-animate.min.js"></script>
 <script src="./assets/js/vendor/angular-route.min.js"></script>
