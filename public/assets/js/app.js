@@ -60,11 +60,6 @@ balneario.controller('compartilheController', function($scope,$http){
             headers: { 'Content-Type' : 'application/x-www-form-urlencoded'},
             data:jQuery.param(data)
         });
-      $scope.myForm.$setPristine();
-
-
         console.log('ok');
-       
-    };        
-
+    }; 
 });
