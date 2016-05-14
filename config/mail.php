@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => null, 'name' => null],
+    'from' => ['address' => 'postmaster@balneariodenovasideias.com.br', 'name' => 'Balneário de novas ideias.'],
 
     /*
     |--------------------------------------------------------------------------
