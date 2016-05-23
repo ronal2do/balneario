@@ -1,6 +1,8 @@
+@extends('welcome')
+
+@section('content')
 
 	<div class="row">
-
 		<div class="Box__marine">
 			<div class="col-xs-8 Padding-zero">
 				<h2 class="Box__titulo-var">Pra onde vão <br>suas ideias? <br><span class="Box__titulo-var-marine">Compartilhe <br>com a gente.</span></h2>
@@ -20,13 +22,15 @@
 				participacão, preencha 
 				os campos abaixo e mande 
 				sua ideia, vamos juntos fazer
-				a Balneário de queremos.</p>	<p style="font-size:10px; color: red" data-ng-show="myForm.email.$invalid && myForm.email.$dirty">Preenchimento nescessário *</p>
+				a Balneário de queremos.</p>	
+				
+
 			</div>
 		</div>
-	
+	<p style="font-size:10px; color: red">Preenchimento nescessário *</p>
 		<div class="row">
 			<div class="lead Form--conteudo">
-				<form name="myForm" data-ng-submit="submitUrl()" action="/#/compartilhe">
+				{!! Form::open(array('url' => 'ideia', 'name' => 'myForm')) !!}
 					<div class="form-group">
 		            	<input  type="text" 
 	            				name="nome" 
@@ -35,6 +39,7 @@
 				            	class="form-control" 
 				            	required pristine>
 		          	</div>
+		          	<p style="font-size:10px; color: red" data-ng-show="myForm.nome.$invalid && myForm.nome.$dirty">Nome nescessário *</p>
 					<div class="form-group">
 		            	<input  type="email" 
 	            				name="email" 
@@ -43,6 +48,7 @@
 				            	class="form-control" 
 				            	required pristine>
 		          	</div>
+		          	<p style="font-size:10px; color: red" data-ng-show="myForm.email.$invalid && myForm.email.$dirty">Email nescessário *</p>
 					<div class="form-group">
 		            	<textarea  	type="text" 
 		            				value="" 
@@ -54,8 +60,8 @@
 						type="submit" 
 						value="Enviar" 
 						data-ng-disabled="myForm.nome.$invalid || myForm.email.$invalid" >
-				</form>
+					{!! Form::close() !!}
 			</div>
-		</div>
-		
+		</div>	
 	</div>
+@endsection

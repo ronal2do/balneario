@@ -1,11 +1,14 @@
-<div class="row">
+@extends('welcome')
 
+@section('content')
+
+<div class="row">
 		<div class="col-sm-4 Box__azul">
 			<div class="col-xs-8 col-sm-12 Padding-zero">
 				<h2 class="Box__titulo">Compromisso <br> com as <br> <span class="Box__titulo-azul">novas idéias.</span></h2>
 			</div>
 			<div class="col-xs-4 col-sm-12">
-				<a href="/#/compromisso" class="Box__titulo-link">clique aqui 
+				<a href="/compromisso" class="Box__titulo-link">clique aqui 
 				<i class="fa fa-caret-right fa-2x dif" aria-hidden="true"></i></a>
 			</div>
 		</div>
@@ -15,7 +18,7 @@
 				<h2 class="Box__titulo">Eixos para <br> <span class="Box__titulo-laranja">a balneário <br> que queremos.</span></h2>
 			</div>
 			<div class="col-xs-4 col-sm-12">
-				<a href="/#/eixos" class="Box__titulo-link">clique aqui 
+				<a href="/eixos" class="Box__titulo-link">clique aqui 
 				<i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></a>
 			</div>
 		</div>
@@ -25,9 +28,10 @@
 				<h2 class="Box__titulo-var">Pra onde vão <br>suas ideias? <br><span class="Box__titulo-var-marine">Compartilhe <br>com a gente.</span></h2>
 			</div>
 			<div class="col-xs-4 col-sm-12">
-				<a href="/#/compartilhe" class="Box__titulo-link var">clique aqui 
+				<a href="/compartilhe" class="Box__titulo-link var">clique aqui 
 				<i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></a>
 			</div>
 		</div>
-		
-	</div>
+</div>
+
+@endsection

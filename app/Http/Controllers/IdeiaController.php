@@ -8,18 +8,20 @@ use Response;
 use App\Http\Requests;
 use App\Ideia;
 
+use Alert;
+use Illuminate\Support\Facades\Redirect;
+
 class IdeiaController extends Controller
 {
     public function store(Request $request)
 	{
-    	$input 		= $request->all();
-        
-        $nome       = $input['nome']; 
-        $email      = $input['email']; 
-        $ideia      = $input['ideia']; 
+    
+    $input 	= $request->all();
+    $nome   = $input['nome']; 
+    $email  = $input['email']; 
 
 		$create = Ideia::create($input);
- 
+     Alert::success('Obrigado por compartilhar suas ideias')->persistent('Fechar');
 
          Mail::queue('email.obrigado', [
          		'nome' => $nome, 
@@ -30,7 +32,7 @@ class IdeiaController extends Controller
               ->cc('ronal2do@gmail.com','Balneário de novas ideias')
               ->subject("Balneário de novas ideias");
         });
-
-        return response($create);
-	}
+         
+     return view('partials.compartilhe');
+	 }
 }

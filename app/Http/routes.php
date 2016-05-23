@@ -11,9 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/',['as'=>'welcome' ,function () {
+	return view('partials.home');
+}]);
+
+Route::get('/compromisso',['as'=>'compromisso' ,function () {
+	return view('partials.compromisso');
+}]);
+
+Route::get('/compartilhe',['as'=>'compartilhe' ,function () {
+	return view('partials.compartilhe');
+}]);
+
+Route::get('/eixos',['as'=>'eixos' ,function () {
+	return view('partials.eixos');
+}]);
 
 Route::get('/email', function () {
     return view('email.obrigado');
@@ -23,5 +36,5 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 Route::group(['middleware' => ['web']], function () {
-    Route::resource('/api/ideia', 'IdeiaController');
+    Route::resource('/ideia', 'IdeiaController@store');
 });
