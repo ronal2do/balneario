@@ -5,11 +5,13 @@
 	<div class="row">
 
 		<div class="Box__laranja">
-			<div class="col-xs-8">
-				<h2 class="Box__titulo-variacao">EIXOS QUE SERVIRÃO<br>	DE BASE PARA  <br> <span class="Box__titulo-laranja">a balneário <br> que queremos.</span></h2>
+			
+
+
+			<div class="col-xs-12" >
+				<h2 class="Box__titulo-variacao" style="padding-top:6px;">EIXOS QUE SERVIRÃO <br>DE BASE PARA <span class="Box__titulo-laranja">a<br> balneário que queremos.</span></h2>
 			</div>
-			<div class="col-xs-4">
-			</div>
+			
 		</div>
 
 	</div>
