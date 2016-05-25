@@ -13,8 +13,7 @@ use Illuminate\Support\Facades\Redirect;
 
 class IdeiaController extends Controller
 {
-    public function store(Request $request)
-	{
+    public function store(Request $request){
     
     $input 	= $request->all();
     $nome   = $input['nome']; 
@@ -29,7 +28,7 @@ class IdeiaController extends Controller
          	], function ($m) use ($email, $nome) {
             
            $m->to($email)
-              ->cc('ronal2do@gmail.com','Balneário de novas ideias')
+              ->cc('fabricio@fabricio40.com.br','Balneário de novas ideias')
               ->subject("Balneário de novas ideias");
         });
          

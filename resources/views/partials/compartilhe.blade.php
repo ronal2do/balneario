@@ -12,7 +12,7 @@
 				participacão, preencha 
 				os campos abaixo e mande 
 				sua ideia, vamos juntos fazer
-				a Balneário de queremos.</p>
+				a Balneário que queremos.</p>
 			</div>
 		</div>
 	
@@ -22,12 +22,12 @@
 				participacão, preencha 
 				os campos abaixo e mande 
 				sua ideia, vamos juntos fazer
-				a Balneário de queremos.</p>	
+				a Balneário que queremos.</p>	
 				
 
 			</div>
 		</div>
-	<p style="font-size:10px; color: red">Preenchimento nescessário *</p>
+	<p style="font-size:10px; color: red">Preenchimento necessário *</p>
 		<div class="row">
 			<div class="lead Form--conteudo">
 				{!! Form::open(array('url' => 'ideia', 'name' => 'myForm')) !!}
@@ -39,7 +39,7 @@
 				            	class="form-control" 
 				            	required pristine>
 		          	</div>
-		          	<p style="font-size:10px; color: red" data-ng-show="myForm.nome.$invalid && myForm.nome.$dirty">Nome nescessário *</p>
+		          	<p style="font-size:10px; color: red" data-ng-show="myForm.nome.$invalid && myForm.nome.$dirty">Nome necessário *</p>
 					<div class="form-group">
 		            	<input  type="email" 
 	            				name="email" 
@@ -48,7 +48,7 @@
 				            	class="form-control" 
 				            	required pristine>
 		          	</div>
-		          	<p style="font-size:10px; color: red" data-ng-show="myForm.email.$invalid && myForm.email.$dirty">Email nescessário *</p>
+		          	<p style="font-size:10px; color: red" data-ng-show="myForm.email.$invalid && myForm.email.$dirty">Email necessário *</p>
 					<div class="form-group">
 		            	<textarea  	type="text" 
 		            				value="" 

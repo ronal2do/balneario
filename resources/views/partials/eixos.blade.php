@@ -42,7 +42,7 @@
 			<h2 class="Eixo__titulo">BALNEÁRIO DE ÁGUAS LIMPAS</h2>
 			<h3 class="Eixo__sub">Cidade Desenvolvida e Sustentável</h3>
 			<p class="Eixo__texto">
-				Desenvolvimento econômico e cidade sustentável, onde o poder público e a iniciativa privada caminhem juntos, com responsabilidade social e ambiental, construindo um futuro saudável das gerações. Nossa cidade necessita de saneamento básico de padrão internacional, água e praias limpas. Nosso pulmão verde do Interpraias pode ser explorado de forma consciente. Nova matriz econômica é uma necessidade, tecnologia é uma oportunidade, nossa gente em nossas universidades devem fazer parte da construção desse novo modelo. Atrair riqueza o ano todo com uma cidade de referências positivas é fundamental, turismo de inverno e grandes eventos culturais, esportivos, de lazer e corporativos são necessidades para o desenvolvimento da cidade. 
+				Desenvolvimento econômico e cidade sustentável, onde o poder público e a iniciativa privada caminhem juntos, com responsabilidade social e ambiental, construindo um futuro saudável das gerações. Nossa cidade necessita de saneamento básico de padrão internacional, água e praias limpas. Nosso pulmão verde do Interpraias pode ser explorado de forma consciente. Nova matriz econômica é uma necessidade, tecnologia é uma oportunidade, nossa gente em nossas universidades deve fazer parte da construção desse novo modelo. Atrair riqueza o ano todo com uma cidade de referências positivas é fundamental, turismo de inverno e grandes eventos culturais, esportivos, de lazer e corporativos são necessidades para o desenvolvimento da cidade. 
 			</p>
 			<p class="Eixo__destaque">
 				Vamos construir a Balneário que queremos para os próximos 20 anos.
