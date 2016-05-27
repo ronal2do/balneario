@@ -51,6 +51,7 @@
 		          	<p style="font-size:10px; color: red" data-ng-show="myForm.email.$invalid && myForm.email.$dirty">Email necessário *</p>
 					<div class="form-group">
 		            	<textarea  	type="text" 
+		            				name="ideia" 
 		            				value="" 
 					            	placeholder="Ideia:" 
 					            	data-ng-model="ideia" 
