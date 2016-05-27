@@ -18,14 +18,16 @@ class IdeiaController extends Controller
     $input 	= $request->all();
     $nome   = $input['nome']; 
     $email  = $input['email']; 
+    $ideia  = $input['ideia']; 
 dd($input);
 		$create = Ideia::create($input);
      Alert::success('Obrigado por compartilhar suas ideias')->persistent('Fechar');
 
          Mail::queue('email.obrigado', [
          		'nome' => $nome, 
-         		'email' => $email
-         	], function ($m) use ($email, $nome) {
+         		'email' => $email, 
+            'ideia' => $ideia
+         	], function ($m) use ($email, $nome, $ideia) {
             
            $m->to($email)
               ->cc('fabricio@fabricio40.com.br','Balneário de novas ideias')
