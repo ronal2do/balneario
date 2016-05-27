@@ -19,7 +19,7 @@ class IdeiaController extends Controller
     $nome   = $input['nome']; 
     $email  = $input['email']; 
     $ideia  = $input['ideia']; 
-dd($input);
+// dd($input);
 		$create = Ideia::create($input);
      Alert::success('Obrigado por compartilhar suas ideias')->persistent('Fechar');
 
