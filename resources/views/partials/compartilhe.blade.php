@@ -49,6 +49,25 @@
 				            	required pristine>
 		          	</div>
 		          	<p style="font-size:10px; color: red" data-ng-show="myForm.email.$invalid && myForm.email.$dirty">Email necessário *</p>
+		          	<div class="form-group">
+		            	<input  type="telefone" 
+	            				name="telefone" 
+				            	placeholder="Telefone: *" 
+				            	data-ng-model="telefone" 
+				            	mask="(99) 9?9999-9999"
+				            	class="form-control" 
+				            	required pristine>
+		          	</div>
+		          	<p style="font-size:10px; color: red" data-ng-show="myForm.telefone.$invalid && myForm.telefone.$dirty">Telefone necessário *</p>
+		          	<div class="form-group">
+		            	<input  type="endereco" 
+	            				name="endereco" 
+				            	placeholder="Endereço: *" 
+				            	data-ng-model="endereco" 
+				            	class="form-control" 
+				            	required pristine>
+		          	</div>
+		          	<p style="font-size:10px; color: red" data-ng-show="myForm.endereco.$invalid && myForm.endereco.$dirty">Endereço necessário *</p>
 					<div class="form-group">
 		            	<textarea  	type="text" 
 		            				name="ideia" 
@@ -60,7 +79,7 @@
 					<input class="btn btn-block Button" 
 						type="submit" 
 						value="Enviar" 
-						data-ng-disabled="myForm.nome.$invalid || myForm.email.$invalid" >
+						data-ng-disabled="myForm.nome.$invalid || myForm.email.$invalid || myForm.telefone.$invalid || myForm.endereco.$invalid" >
 					{!! Form::close() !!}
 			</div>
 		</div>	

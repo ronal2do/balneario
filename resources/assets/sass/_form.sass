@@ -1,0 +1,34 @@
+.form-control
+	border: 1px solid #bdc3c7
+	border-radius: 0px
+	font-family: $serif
+	:focus
+		border-color: $marine
+.form-group
+	position: relative
+	margin-bottom: 0px
+.Form
+	&--conteudo 
+		padding-top: 0px
+		margin: 0 0
+.Button
+	margin-top: 25px
+	margin-bottom: 25px
+	color: #fff
+	+setBgColorAndHover($marine)
+
+@media (min-width: 480px)
+	.Form
+		&--conteudo 
+			padding-top: 0
+			margin: 0 0
+@media (min-width: 768px)
+	.Form
+		&--conteudo 
+			padding-top: 0
+			margin: 0 0
+@media (min-width: 992px)
+	.Form
+		&--conteudo 
+			padding-top: 32px
+			margin: 0 0

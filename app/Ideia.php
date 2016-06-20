@@ -9,6 +9,8 @@ class Ideia extends Model
     protected $fillable = [
 		'nome',
 		'email',
+    	'telefone',
+    	'endereco',
     	'ideia'
     ];
 

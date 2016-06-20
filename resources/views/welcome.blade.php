@@ -28,7 +28,7 @@
 	<meta name="msapplication-TileImage" content="./assets/favicon.ico/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link href="./assets/css/vendor/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/css/vendor/flat-ui.css">
 	<link rel="stylesheet" href="./assets/css/vendor/sweetalert.css">
@@ -38,24 +38,34 @@
 </head>
 <body>
 <div class="container-fluid row Fundo">
-    <div class="container">
-        <div class="Logo-container">
-            <a href="/" class=" Logo-container-link">
-                <img src="./assets/logo.png" alt="logo" class="Logo" width="100px">
-            </a>
-        </div>
+    <div class="container">        
+		<div class="col-sm-6 col-xs-6 col-md-6">
+			 <div class="Logo-container">
+	            <a href="/" class="Logo-container-link">
+	                <img src="./assets/logo.png" alt="logo" class="Logo" width="100px">
+	            </a>
+	        </div>
+		</div>
+		<div class="col-sm-6 col-xs-6 col-md-6">
+			<div class="Logo-sociais">
+	        	<a href="https://www.facebook.com/fabriciooliveira05/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+				<a href="https://www.instagram.com/fabriciooliveirabc/" target="_blank"><i class="fa fa-instagram"></i></a>
+	        </div>
+		</div>
     </div>
 </div>
 
 <div class="container Box__container" >
 @yield('content')
 </div>
-
+<footer>
+	<div class="container Footer">
+		<a href="https://www.facebook.com/fabriciooliveira05/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+		<a href="https://www.instagram.com/fabriciooliveirabc/" target="_blank"><i class="fa fa-instagram"></i></a>
+	</div>
+</footer>
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
-<script src="./assets/js/vendor/angular.min.js"></script>
-<script src="./assets/js/vendor/angular-animate.min.js"></script>
-<script src="./assets/js/vendor/sweetalert.min.js"></script>
 <script src="./assets/js/app.js"></script>
     <!-- Include this after the sweet alert js file -->
     @include('sweet::alert')

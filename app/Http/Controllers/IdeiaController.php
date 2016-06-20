@@ -19,15 +19,19 @@ class IdeiaController extends Controller
     $nome   = $input['nome']; 
     $email  = $input['email']; 
     $ideia  = $input['ideia']; 
+    $telefone   = $input['telefone']; 
+    $endereco  = $input['endereco']; 
 // dd($input);
 		$create = Ideia::create($input);
      Alert::success('Obrigado por compartilhar suas ideias')->persistent('Fechar');
 
          Mail::queue('email.obrigado', [
-         		'nome' => $nome, 
-         		'email' => $email, 
-            'ideia' => $ideia
-         	], function ($m) use ($email, $nome, $ideia) {
+         		'nome'       => $nome, 
+         		'email'      => $email, 
+                'ideia'      => $ideia, 
+                'telefone'  => $telefone, 
+                'endereco'  => $endereco
+         	], function ($m) use ($email, $nome, $ideia, $telefone, $endereco) {
             
            $m->to($email)
               ->cc('fabricio@fabricio40.com.br','Balneário de novas ideias')
@@ -37,3 +41,5 @@ class IdeiaController extends Controller
      return view('partials.compartilhe');
 	 }
 }
+
+

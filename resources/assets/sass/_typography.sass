@@ -1,0 +1,171 @@
+@font-face
+	font-family: 'BebasNeueBold'
+	src: url('../fonts/BebasNeue/BebasNeueBold.eot')
+	src: url('../fonts/BebasNeue/BebasNeueBold.woff2') format('woff2'), url('../fonts/BebasNeue/BebasNeueBold.woff') format('woff'), url('../fonts/BebasNeue/BebasNeueBold.ttf') format('truetype'), url('../fonts/BebasNeue/BebasNeueBold.svg#BebasNeueBold') format('svg'), url('../fonts/BebasNeue/BebasNeueBold.eot?#iefix') format('embedded-opentype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'PTSerif-BoldItalic'
+	src: url('../fonts/PTSerif/PTSerif-BoldItalic.eot') format('embedded-opentype')
+	font-weight: normal
+	font-style: normal
+
+
+@font-face
+	font-family: 'PTSerif-BoldItalic'
+	src:  url('../fonts/PTSerif/PTSerif-BoldItalic.woff') format('woff'), url('../fonts/PTSerif/PTSerif-BoldItalic.ttf')  format('truetype'), url('../fonts/PTSerif/PTSerif-BoldItalic.svg#PTSerif-BoldItalic') format('svg')
+	font-weight: normal
+	font-style: normal
+
+
+@font-face 
+	font-family: 'PTSerif-Regular'
+	src: url('../fonts/PTSerif/PTSerif-Regular.eot') format('embedded-opentype')
+	font-weight: normal
+	font-style: normal
+
+
+@font-face 
+	font-family: 'PTSerif-Regular'
+	src:  url('../fonts/PTSerif/PTSerif-Regular.woff') format('woff'), url('../fonts/PTSerif/PTSerif-Regular.ttf')  format('truetype'), url('../fonts/PTSerif/PTSerif-Regular.svg#PTSerif-Regular') format('svg')
+	font-weight: normal
+	font-style: normal
+
+
+
+body
+	font-family: $serif
+	color: $cinza
+p
+	font-size: 14px
+.fa-2x
+	margin-left: 24px
+	margin-top: -1px
+	color: $azul
+.fa-2x.dif
+	color: $marine
+.box
+	font-size: 1em
+.Padding-zero
+	padding: 0
+.Box__
+	&variacao
+		color: $azul
+		font-family: $serif, serif
+		text-transform: none
+		font-weight: 100
+		line-height: initial
+		font-size: 0.72em
+		padding-top: 10px
+	&titulo
+		font-family: $fontPrimary
+		font-size: 1.8em
+		font-weight: 100
+		line-height: 0.9em
+		margin: 24px 3px
+		color: #fff
+		&-azul
+			color: $marine
+		&-laranja
+			color: $azul
+		&-marine
+			color: #fff
+		&-link
+			text-transform: lowercase
+		&-variacao
+			font-family: "BebasNeueBold"
+			font-size: 1.8em
+			font-weight: 100
+			line-height: 0.9em
+			margin: 23px -13px
+@media (min-width: 480px)
+	.Box__
+		&titulo
+			&-variacao
+				margin: 6px -13px
+
+@media (min-width: 768px)
+	.Box__
+		&titulo
+			&-variacao
+				font-size: 2.3em
+				margin: 30px 10px
+.Box__titulo-var
+	font-family: $fontPrimary
+	font-size: 1.6em
+	font-weight: 100
+	line-height: 0.9em
+	color: $azul
+	&-marine
+		color: #fff
+	&-link
+		text-transform: lowercase
+.Eixo
+	&__texto
+		font-family: $serif
+		font-size: 0.8em
+		font-weight: 100
+	&__sub
+		font-size: 0.8em
+		font-weight: 100
+		margin-top: 15px
+		font-family: $serif
+		color: #fff
+	&__titulo
+		text-transform: uppercase
+		font-family: $fontPrimary
+		font-size: 1.9em
+		font-weight: 100
+		line-height: 0.9em
+	&__azul
+		color: $marine
+	&__marine
+		color: $azul
+	&__destaque
+		font-size: 0.8em
+		color: $marine
+		font-weight: 500
+		font-family: $serifbold
+.Destaque-azul
+	color: $marine
+	font-weight: 500
+	font-family: $serifbold
+
+@media (min-width: 480px)
+	.Box__titulo
+		font-family: $fontPrimary
+		font-size: 1.8em
+		margin: 10px 0px
+@media (min-width: 768px)
+	.Box__titulo
+		font-family: $fontPrimary
+		font-size: 2.0em
+		margin: 2px 6px
+		&-link
+			margin: 27px 7px
+			margin-left: 78px
+	.Box__titulo-var
+		font-family: $fontPrimary
+		font-size: 1.5em
+		margin: 0px
+@media (min-width: 992px)
+	.Box__titulo
+		font-family: $fontPrimary
+		font-size: 2.5em
+		margin: 0px
+		color: #fff
+
+	.Box__titulo-var
+		font-family: $fontPrimary
+		font-size: 1.8em
+		margin: 0px
+@media (min-width: 1200px)
+	.Box__titulo
+		font-family: $fontPrimary
+		font-size: 2.8em
+		margin: 0
+	.Box__titulo-var
+		font-family: $fontPrimary
+		font-size: 2.1em
+		margin: 0

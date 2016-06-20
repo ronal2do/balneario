@@ -185,13 +185,7 @@ p {
 .Logo {
   width: 100px; }
   .Logo-sociais {
-    float: right;
-    position: relative;
-    left: 0; }
-    .Logo-sociais > a i {
-      color: #151e47;
-      font-size: 1.3em;
-      padding-top: 20px; }
+    margin: 20px 0px; }
 
 .Logo-container {
   margin: 20px 0px; }
@@ -368,21 +362,4 @@ p {
     padding-top: 32px;
     margin: 0 0; } }
 
-footer {
-  margin-top: 1em;
-  font-size: 1.2em; }
-
-.Footer {
-  text-align: center; }
-
-@media (min-width: 480px) {
-  footer {
-    margin-top: 3em;
-    font-size: 1.2em; } }
-
-@media (min-width: 992px) {
-  footer {
-    margin-top: 3em;
-    font-size: 1.2em; } }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
