@@ -38,7 +38,7 @@
 </head>
 <body>
 <div class="container-fluid row Fundo">
-    <div class="container">        
+    <div class="container">
 		<div class="col-sm-6 col-xs-6 col-md-6">
 			 <div class="Logo-container">
 	            <a href="/" class="Logo-container-link">
@@ -58,6 +58,7 @@
 <div class="container Box__container" >
 @yield('content')
 </div>
+<br/>
 <footer>
 	<div class="container Footer">
 		<a href="https://www.facebook.com/fabriciooliveira05/" target="_blank"><i class="fa fa-facebook-official"></i></a>

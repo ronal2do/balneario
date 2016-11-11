@@ -25,13 +25,13 @@
 				</div>
 			</div>
 		</a>
-		<a href="/compartilhe">
+		<a href="/equipe">
 			<div class="col-sm-4 Box__marine">
 				<div class="col-xs-8 col-sm-12 Padding-zero">
-					<h2 class="Box__titulo-var">Pra onde vão <br>suas ideias? <br><span class="Box__titulo-var-marine">Compartilhe <br>com a gente.</span></h2>
+					<h2 class="Box__titulo">Equipe <br>Novas <br><span class="Box__titulo-marine" style="color:#151E47">ideias.</span></h2>
 				</div>
 				<div class="col-xs-4 col-sm-12">
-					<a href="/compartilhe" class="Box__titulo-link var"><span class="hidden-xs">clique aqui</span>
+					<a href="/equipe" class="Box__titulo-link "><span class="hidden-xs">clique aqui</span>
 					<i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></a>
 				</div>
 			</div>

@@ -215,7 +215,6 @@ p {
 .box, .Box__azul, .Box__marine, .Box__laranja {
   height: 125px;
   color: #fff;
-  text-transform: uppercase;
   margin: 20px 0px;
   padding: 0px 13px; }
 
@@ -329,6 +328,22 @@ p {
     margin: 0;
     padding: 25px; } }
 
+.checkbox input[type="checkbox"] {
+  float: none;
+  margin: 8px 10px; }
+
+.checkbox input {
+  display: grid; }
+
+.checkbox {
+  display: block;
+  min-height: 0px;
+  padding-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  text-transform: capitalize; }
+
 .form-control {
   border: 1px solid #bdc3c7;
   border-radius: 0px;
@@ -370,7 +385,10 @@ p {
 
 footer {
   margin-top: 1em;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  position: fixed;
+  bottom: 0;
+  width: 100vw; }
 
 .Footer {
   text-align: center; }
