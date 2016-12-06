@@ -12,13 +12,17 @@
 */
 
 
-Route::get('/',['as'=>'welcome' ,function () {
-	return view('form.form');
-}]);
+// Route::get('/',['as'=>'welcome' ,function () {
+// 	return view('form.form');
+// }]);
 
 // Route::get('/',['as'=>'welcome' ,function () {
 // 	return view('partials.home');
 // }]);
+
+Route::get('/',['as'=>'welcome' ,function () {
+	return view('partials.homeform');
+}]);
 
 Route::get('/compromisso',['as'=>'compromisso' ,function () {
 	return view('partials.compromisso');

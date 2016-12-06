@@ -56,7 +56,7 @@
 </div>
 
 <div class="container Box__container" >
-@yield('content')
+		@yield('content')
 </div>
 <br/>
 <footer>
